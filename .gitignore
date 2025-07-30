@@ -32,6 +32,7 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+app/build/
 
 # Symbolication related
 app.*.symbols
@@ -44,4 +45,7 @@ app.*.map.json
 /app/android/app/profile
 /app/android/app/release
 
-app/build/
+# Generated files
+*.g.dart
+*.gr.dart
+**/i18n/gen
