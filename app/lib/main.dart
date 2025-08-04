@@ -1,11 +1,10 @@
 import 'dart:io';
 
+import 'package:app/app.dart';
+import 'package:app/di/di.dart';
+import 'package:app/logging.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
-
-import 'app.dart';
-import 'di/di.dart';
-import 'logging.dart';
 
 final _log = Logger('MAIN');
 

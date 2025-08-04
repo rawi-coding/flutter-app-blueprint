@@ -1,7 +1,6 @@
 import 'package:app/di/di.dart';
 import 'package:app/navigation/navigation.dart';
 import 'package:app/onboarding/onboarding_view_model.dart';
-import 'package:app/splash/splash_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';

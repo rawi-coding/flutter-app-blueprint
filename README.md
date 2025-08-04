@@ -2,15 +2,34 @@
 
 Blueprint to quickstart app development
 
-## Getting Started
+## Build & Generate
 
-This project is a starting point for a Flutter application.
+### Build Android
 
-A few resources to get you started if this is your first Flutter project:
+Update version in `pubspec.yaml` and run:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`fvm flutter build appbundle`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Generate localization
+
+Run the following command in app component:
+
+`fvm flutter gen-l10n`
+
+### Generate Source Code
+
+A shell script is provided to generate the source code in all components.
+
+`sh parallel_build_runner.sh`
+
+### Generate App Icons
+
+The package `flutter_launcher_icons` is used to generate the app icons. Run the following command in app component:
+
+`flutter pub run flutter_launcher_icons`
+
+### Splash Screen
+
+The package `flutter_native_splash` is used to create the native splash screen. Run the following command in app component:
+
+`flutter pub run flutter_native_splash:create`

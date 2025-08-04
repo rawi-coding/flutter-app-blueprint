@@ -1,0 +1,12 @@
+# Online generator: https://icon.kitchen/
+flutter_launcher_icons:
+  image_path: 'assets/images/icon/app-icon.png'
+
+  # Android
+  android: true
+  adaptive_icon_background: 'assets/images/icon/adaptive-icon-background.png'
+  adaptive_icon_foreground: 'assets/images/icon/adaptive-icon-foreground.png'
+
+  # iOS
+  ios: true
+  remove_alpha_ios: true

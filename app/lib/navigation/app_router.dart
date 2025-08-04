@@ -7,8 +7,6 @@ class AppRouter extends RootStackRouter {
   final List<AutoRoute> routes = [_splash, _home, _onboarding];
 }
 
-// Main routes
-
 final _splash = AutoRoute(page: SplashRoute.page, path: '/', initial: true);
 
 final _home = AutoRoute(page: HomeRoute.page, path: '/home');

@@ -1,7 +1,6 @@
 import 'package:app/i18n/i18n.dart';
+import 'package:app/navigation/navigation.dart';
 import 'package:flutter/material.dart';
-
-import 'navigation/navigation.dart';
 
 class App extends StatelessWidget {
   App({super.key});
