@@ -32,4 +32,4 @@ The package `flutter_launcher_icons` is used to generate the app icons. Run the 
 
 The package `flutter_native_splash` is used to create the native splash screen. Run the following command in app component:
 
-`flutter pub run flutter_native_splash:create`
+`fvm dart run flutter_native_splash:create --path=flutter_native_splash.yaml`

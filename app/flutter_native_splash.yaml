@@ -1,0 +1,11 @@
+# https://pub.dev/packages/flutter_native_splash
+flutter_native_splash:
+  color: '#fcd7de'
+  color_dark: '#ad3d53'
+  image: assets/images/icon/app-icon.png
+
+  android_12:
+    color: '#bb86fc'
+    color_dark: '#6200ee'
+
+  web: false
