@@ -2,6 +2,7 @@ library;
 
 import 'package:get_it/get_it.dart';
 import 'package:logging/logging.dart';
+import 'package:persons/component.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final _log = Logger('DI');
@@ -12,7 +13,9 @@ class DI {
   static Future<void> init() {
     _log.info('Initialize dependency injection');
 
-    final getIt = GetIt.I.._registerSharedPreferences();
+    final getIt = GetIt.I
+      .._registerSharedPreferences()
+      .._registerPersonRepo();
 
     return getIt.allReady();
   }
@@ -27,5 +30,11 @@ extension _AppComponentGetItX on GetIt {
     _log.info('Register shared preferences');
     Future<SharedPreferences> factoryFunc() async => SharedPreferences.getInstance();
     registerSingletonAsync(factoryFunc);
+  }
+
+  void _registerPersonRepo() {
+    _log.info('Register person repository');
+    factoryFunc() => PersonsComponent.createLocalRepo();
+    registerSingleton<PersonsLocalRepo>(factoryFunc());
   }
 }

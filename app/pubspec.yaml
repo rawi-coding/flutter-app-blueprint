@@ -13,6 +13,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  # workspace modules
+  persons: 1.0.0
+
   # https://pub.dev/packages/intl
   intl: ^0.20.2
   # https://pub.dev/packages/ansicolor
@@ -39,7 +42,7 @@ dev_dependencies:
   # https://pub.dev/packages/flutter_lints
   flutter_lints: ^6.0.0
   # https://pub.dev/packages/build_runner
-  build_runner: ^2.4.2
+  build_runner: ^2.5.4
   # https://pub.dev/packages/auto_route_generator
   auto_route_generator: ^10.2.3
   # https://pub.dev/packages/flutter_launcher_icons
